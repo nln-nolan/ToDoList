@@ -1,0 +1,128 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Dark Theme*/
+.dark {
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║         Default Color         ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* Color Primary 1 */
+    --primary-background-color: #4e4e4e;
+    --primary-font-color: #dcdcdc;
+    /* Color Secondary 2 */
+    --secondary-background-color: #88888880;
+    --secondary-font-color: #dcdcdc;
+    /* Color 3 */
+    --tdp-primary-background-color: #5d5d5d;
+    --tdp-primary-font-color: #5d5d5d;
+    /*-------------------------------------------*/
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║      Bars de navigation       ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* le rectangle en haut a gauche */
+    --navbar-background-color: #00000066;
+    --navbar-font-color: #dcdcdc;
+    /* bar du haut */
+    --top-bar-background-color: #404040;
+    --top-bar-font-color: #dcdcdc;
+    /* Bar a gauche */
+    --sidebar-background-color: #404040;
+    --sidebar-font-color: #dcdcdc;
+    /* Thème */
+    --theme-background-color: #ffffff40;
+    --theme-font-color: #fff;
+    /* to do page button */
+    --tdp-button-background-color: #a9a9a9;
+    --tdp-button-font-color: #000;
+    /*-------------------------------------------*/
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║             Other             ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* scrollBar */
+    --scrollbar-background-color: #727272;
+    --scrollbar-font-color: #dcdcdc;
+    /* DevButton */
+    --dev-button-background-color: #A9A9A9;
+    --dev-button-font-color: #000;
+    /* Add Input */
+    --add-task-input-background-color: #c0c0c0;
+    --add-task-input-font-color: #333;
+    /* Input Task */
+    --input-task-background-color: #c0c0c0;
+    --input-task-font-color: #000;
+    /* Add task button */
+    --add-task-button-background-color: #c0c0c0;
+    --add-task-button-font-color: #333;
+    /* clear button */
+    --clear-button-background-color: #fa0a0a;
+    --clear-button-font-color: #333;
+    /* text "Aucune tâche pour le moment…" color */
+    --no-task-font-color: #dddddd;
+    /* Task successful */
+    --successful-task-font-color: #dddddd;
+}
+
+
+
+/*light Theme*/
+.light {
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║         Default Color         ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* Color Primary 1 */
+    --primary-background-color: #fff;
+    --primary-font-color: #000;
+    /* Color Secondary 2 */
+    --secondary-background-color: #dcdcdc;
+    --secondary-font-color: #000;
+    /* Color 3 */
+    --tdp-primary-background-color: #ffffff;
+    --tdp-primary-font-color: #000;
+    /*-------------------------------------------*/
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║      Bars de navigation       ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* le rectangle en haut a gauche */
+    --navbar-background-color: #b0b0b0;
+    --navbar-font-color: #000;
+    /* bar du haut */
+    --top-bar-background-color: #dcdcdc;
+    --top-bar-font-color: #000;
+    /* Bar a gauche */
+    --sidebar-background-color: #dcdcdc;
+    --sidebar-font-color: #000;
+    /* Thème */
+    --theme-background-color: #a9a9a9;
+    --theme-font-color: #000;
+    /* to do page button */
+    --tdp-button-background-color: #a9a9a9;
+    --tdp-button-font-color: #000;
+    /*-------------------------------------------*/
+    /*     ╔═══════════════════════════════╗     */
+    /*     ║             Other             ║     */
+    /*     ╚═══════════════════════════════╝     */
+    /* scrollBar */
+    --scrollbar-background-color: #dcdcdc;
+    --scrollbar-font-color: #4e4e4e;
+    /* DevButton */
+    --dev-button-background-color: #A9A9A9;
+    --dev-button-font-color: #000;
+    /* Add Input */
+    --add-task-input-background-color: #fff;
+    --add-task-input-font-color: #333;
+    /* Input Task */
+    --input-task-background-color: #fff;
+    --input-task-font-color: #000;
+    /* Add task button */
+    --add-task-button-background-color: #c0c0c0;
+    --add-task-button-font-color: #333;
+    /* clear button */
+    --clear-button-background-color: #fa0a0a;
+    --clear-button-font-color: #333;
+    /* text "Aucune tâche pour le moment…" color */
+    --no-task-font-color: #000;
+    /* Task successful */
+    --successful-task-font-color: #000;
+}

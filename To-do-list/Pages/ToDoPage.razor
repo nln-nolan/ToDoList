@@ -1,0 +1,54 @@
+﻿@page "/"
+@using ToDoList.Components;
+@using Models;
+
+<PageTitle>Todo</PageTitle>
+
+<div class="tdp @(ToDoOptions.IsDarkTheme ? "dark" : "light")">
+    @if (ToDoOptions.IsDevModeActive)
+    {
+        <div class="tdp-dev-toolbar" style="@(_displayBorders ? "border: 4px solid red;" : "")">
+            <DevModeButtonComponent Title="Ajouter 10 Tâches" ClickAction="@(() => AddTasks(10))" />
+            <DevModeButtonComponent Title=@($"{(_addTasksXSec ? "Stoper" : "Ajouter des Tâches en continu" )}") ClickAction="@(async () => await ToggleAddTasksXSec())" />
+            <DevModeButtonComponent Title="Tout cocher" ClickAction="CheckAllTasks"/>
+            <DevModeButtonComponent Title="Tout décocher" ClickAction="UncheckAllTasks" />
+            <DevModeButtonComponent Title=@($"{(_displayBorders ? "Cacher" : "Afficher" )} les bordures") ClickAction="ToggleBorders" />
+        </div>
+    }
+    <div class="tdp-tasks-counter" style="@(_displayBorders ? "border: 5px solid yellow;" : "")">
+        <h3 class="tdp-headers">Tâches réussite @($"{_tasks.Count(todo => todo.IsDone)} / {_tasks.Count()}")</h3>
+    </div>
+
+    <div class="tdp-tasks-management" style="@(_displayBorders ? "border: 5px solid purple;" : "") @(ToDoOptions.IsDevModeActive ? "height: calc(100% - 55px - 40px - 40px);" : "height: calc(100% - 40px - 40px);")">
+        <div class="tdp-box-left" style="@(_displayBorders ? "border: 5px solid green;" : "")">
+            @if (_tasks.Any())
+            {
+                // si au moins une task
+                <div class="scroll-bar" style="@(_displayBorders ? "border: 5px solid grey;" : "")">
+                    <ol>
+                        @foreach (var todo in _tasks)
+                        {
+                            <CascadingValue Value="this">
+                                <ToDoItemComponent Item="@todo" />
+                            </CascadingValue>
+                        }
+                    </ol>
+                </div>
+            }
+            else
+            {
+                // si aucune task
+                <p class="no-task">Aucune tâche pour le moment…</p>
+            }
+        </div>
+
+        <div class="tdp-box-right" style="@(_displayBorders ? "border: 5px solid blue;" : "")">
+            <input class="tdp-bar-input-size tdp-add-input" placeholder="Chose à faire" @bind="_newTaskTitle" />
+            <div class="tdp-place-button-bottom" style="@(_displayBorders ? "border: 5px solid #00FFF3;" : "")">
+                <button class="tdp-add-button" @onclick="AddTask">Ajouter une tâche</button>
+            
+                <button class="tdp-clear-button" @onclick="ClearTask">Tout supprimer</button>
+            </div>
+        </div>
+    </div>
+</div>

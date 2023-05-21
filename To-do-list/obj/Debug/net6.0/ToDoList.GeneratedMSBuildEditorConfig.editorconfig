@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ToDoList
+build_property.RootNamespace = ToDoList
+build_property.ProjectDir = C:\Users\pitchou\Documents\App\To-do-list\To-do-list\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pitchou\Documents\App\To-do-list\To-do-list
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/Components/DevModeButtonComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEZXZNb2RlQnV0dG9uQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ofwlx75rzl
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/Components/ToDoItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb0RvSXRlbUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-toDoItem
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/Pages/ToDoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9Eb1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-toDoPage
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-y8ttcauk1b
+
+[C:/Users/pitchou/Documents/App/To-do-list/To-do-list/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-f5eujf7bqf

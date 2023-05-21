@@ -1,0 +1,71 @@
+﻿
+li {
+    display: flex;
+    margin: 8px 0;
+    gap: 8px;
+    align-items: center;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+li:first-child {
+    margin-top: 0px;
+}
+
+.cbl {
+    display: block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background .5s;
+}
+
+.cb {
+    display: none;
+}
+
+.cb:checked + .cbl::after {
+    content: '\2713';
+    color: white;
+}
+
+.cbl::before {
+    content: '';
+    position: absolute;
+}
+
+.cbl, .cbl::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: 1px solid black;
+}
+
+.cb:checked + .cbl::before {
+    transform: scale(2);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+.done-item {
+    text-decoration: line-through;
+    flex: 1 1 100px;
+    padding-left: 6px;
+    cursor: no-drop;
+}
+
+.not-done-item {
+    width: 100%;
+    background-color: var(--input-task-background-color);
+    color: var(--input-task-font-color);
+    padding-left: 6px;
+}
+
+.delete-button {
+    background-color: #FF3030;
+    width: 25px;
+}

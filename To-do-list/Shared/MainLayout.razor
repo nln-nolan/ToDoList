@@ -1,0 +1,40 @@
+﻿@using ToDoList.Models;
+@using ToDoList.Components;
+@inherits LayoutComponentBase
+
+<div class="page @(ToDoOptions.IsDarkTheme ? "dark" : "light")">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <div class="tdp-dev-toolbar btn btn-5">
+                <DevModeButtonComponent Title=@($"Dev mode is {(ToDoOptions.IsDevModeActive ? "On" : "Off")}") ClickAction="ToggleDevMode" />
+            </div>
+        </div>
+
+        <article class="article">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        ToDoOptions.OnThemeChanged -= Update;
+        ToDoOptions.OnThemeChanged += Update;
+        base.OnInitialized();
+    }
+
+    private void Update()
+    {
+        StateHasChanged();
+    }
+
+    private void ToggleDevMode()
+    {
+        ToDoOptions.IsDevModeActive = !ToDoOptions.IsDevModeActive;
+    }
+}

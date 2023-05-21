@@ -1,0 +1,35 @@
+﻿
+<li>
+    <input type="checkbox" class="cb" id="@Item.Id" checked="@Item.IsDone" @oninput="ToggleIsDone" />
+    <label class="cbl" for="@Item.Id"></label>
+    @*<input class="checkbox-item" type="checkbox" checked="@Item.IsDone" @oninput="ToggleIsDone" />*@
+    @if (Item.IsDone)
+    {
+        <input class="done-item bar-input-size" placeholder="Entrez votre tâche n° 1" @bind="Item.Title" disabled />
+    }
+    else
+    {
+        <input class="not-done-item bar-input-size" @bind="Item.Title" />
+    }
+    <button class="delete-button" @onclick="@(() => ToDoPage.DeleteToDo(Item))">🗙</button>
+</li>
+
+
+
+@*<li>
+    <input class="checkbox-item" type="checkbox" checked="@Item.IsDone" @oninput="ToggleIsDone" />
+    @if (Item.IsDone)
+    {
+        <input class="done-item bar-input-size" placeholder="Entrez votre tâche n° 1" @bind="Item.Title" disabled />
+    }
+    else
+    {
+        <input class="not-done-item bar-input-size" @bind="Item.Title" />
+    }
+    <button class="delete-button" @onclick="@(() => ToDoPage.DeleteToDo(Item))">🗙</button>
+
+
+
+    <input type="radio" name="demo6" class="demo6" id="demo6-a" checked>
+    <label for="demo6-a">Oui</label>
+</li>*@
